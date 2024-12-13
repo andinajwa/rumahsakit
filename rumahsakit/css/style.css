@@ -1,0 +1,105 @@
+.h-80 {
+    height: 20rem;
+}
+
+.mt-2 {
+    margin-top: 8px;
+}
+
+.mb-2 {
+    margin-bottom: 8px;
+}
+
+.mt-3 {
+    margin-top: 12px;
+}
+
+.mb-3 {
+    margin-bottom: 12px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.p-5 {
+    padding: 20px;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.bg-dark-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-dark-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(
+        0,
+        0,
+        0,
+        0.7
+    ) !important; /* Adjust darkness with opacity */
+    z-index: 1; /* Place overlay above background */
+}
+
+.bg-dark-overlay {
+    z-index: 0; /* Place content under overlay */
+}
+
+.main-sidebar {
+    background-color: #1e56a0 !important;
+}
+
+.card-gray:not(.card-outline) > .card-header {
+    background-color: #1e56a0 !important;
+}
+
+.home-page {
+    width: 100% !important;
+    height: 100vh !important;
+    background-image: url("assets/dist/img/bg.jpg") !important;
+}
+
+.card-users {
+    background: rgba(255, 255, 255, 0.2) !important; /* Transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.3) !important; /* Border with opacity */
+    backdrop-filter: blur(10px) !important; /* Glass effect */
+    -webkit-backdrop-filter: blur(10px) !important; /* Safari support */
+    border-radius: 15px !important; /* Smooth corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow */
+    overflow: hidden !important; /* Ensure content stays inside rounded corners */
+    text-decoration: none;
+}
+
+.card-title {
+    font-weight: bold !important;
+}
+
+/* .card-users i {
+    font-size: 34px !important;
+    color: #007bff !important;
+} */
